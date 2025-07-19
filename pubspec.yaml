@@ -1,6 +1,6 @@
 name: safatisync_app
 description: "Приложение для обслуживания пожаротушительных установок"
-publish_to: 'none'  # Отключает публикацию на pub.dev (для приватных проектов)
+publish_to: 'none'  # сайт, куда мы опубликовали проект
 
 version: 1.0.0+1    # Формат: версия (1.0.0) + build-номер (+1)
 
@@ -22,9 +22,14 @@ dev_dependencies:
     sdk: flutter     # Тестирование
   flutter_lints: ^5.0.0 # Стандартные линтеры
 
-flutter:
+
+
+flutter: # здесь все доп.КОНФИГУРАЦИОННЫЕ НАСТРОЙКИ и ЗАВИСИМОСТИ
   uses-material-design: true  # Включает Material Icons
-  
+   
+
+
+   
   assets:
     - assets/icons/   # Путь к иконкам
     - assets/images/  # Путь к изображениям
