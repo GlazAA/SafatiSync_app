@@ -1,0 +1,30 @@
+name: safatisync_app
+description: "Приложение для обслуживания пожаротушительных установок"
+publish_to: 'none'  # Отключает публикацию на pub.dev (для приватных проектов)
+
+version: 1.0.0+1    # Формат: версия (1.0.0) + build-номер (+1)
+
+environment:
+  sdk: ^3.8.1       # Минимальная версия Dart SDK
+
+dependencies:
+  flutter:
+    sdk: flutter     # Базовый Flutter SDK
+
+  # Основные пакеты
+  sqflite: ^2.3.0    # SQLite для локальной БД
+  path_provider: ^2.1.1 # Доступ к путям файловой системы
+  flutter_bloc: ^8.1.3 # BLoC для управления состоянием
+  http: ^0.13.6      # HTTP-запросы к 1С API
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter     # Тестирование
+  flutter_lints: ^5.0.0 # Стандартные линтеры
+
+flutter:
+  uses-material-design: true  # Включает Material Icons
+  
+  assets:
+    - assets/icons/   # Путь к иконкам
+    - assets/images/  # Путь к изображениям
